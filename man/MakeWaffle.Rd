@@ -4,21 +4,22 @@
 \alias{MakeWaffle}
 \title{Make a Waffle Plot}
 \usage{
-MakeWaffle(vec, title, colours = NULL)
+MakeWaffle(vec, title, colors)
 }
 \arguments{
 \item{vec}{a numeric vector of strictly non-negative values}
 
-\item{title}{the title of the plot}
+\item{title}{the title of the plot. Defaults to the name of \code{vec}.}
 
-\item{colours}{a character vector of colours the same length as \code{vec}}
+\item{colors}{a character vector of colors the same length as \code{vec}.
+Defaults to colors from \code{\link[grDevices]{rainbow}}.}
 }
 \value{
-Nothing. A waffle plot is displayed
+Nothing. A waffle plot is displayed.
 }
 \description{
 Make a Waffle Plot
 }
 \examples{
-  MakeWaffle(vec = runif(5), title = "test")
+  MakeWaffle(vec = runif(5), title = "Waffle plot of random proportions")
 }
